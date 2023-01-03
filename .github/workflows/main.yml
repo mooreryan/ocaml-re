@@ -27,5 +27,5 @@ jobs:
     - run: opam pin -n .
     - run: opam depext -yt re
     - run: opam install -t . --deps-only
-    - run: opam exec -- dune build
+    - run: opam exec -- dune build deprecated/ lib/ lib_test/ 
     - run: opam exec -- dune runtest
